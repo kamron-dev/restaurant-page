@@ -29,18 +29,12 @@ export default function renderPage() {
             
             locationButton.textContent = "Location";
             navElement.appendChild(locationButton);
-            mainDiv.appendChild(navElement);
+            
+            header.appendChild(navElement);
 
             return mainDiv;
-        }
+        };
 
-        // const navElement = document.createElement("nav");
-        // for (let i = 0; i < 3; i++) {
-        //     const buttons = document.createElement("button");
-        //     buttons.classList.add("nav-button");
-        //     navElement.appendChild(buttons);
-        // };
-        // mainDiv.appendChild(navElement);
 
         createHeader();
         createNav();
