@@ -35,9 +35,18 @@ export default function renderPage() {
             return mainDiv;
         };
 
+        function createMain() {
+            const contentDiv = document.createElement("div");
+            contentDiv.setAttribute("id", "content-Div");
+            mainDiv.appendChild(contentDiv);
+
+            return mainDiv
+        }
+
 
         createHeader();
         createNav();
+        createMain();
     });
     
     
