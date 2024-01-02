@@ -11,22 +11,27 @@ html {
 }
 
 body {
-    background-image: url("./pic.png");
+   /* background-image: url("./pic.png"); */
     margin: 0;
     padding: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 #header {
     background-color: var(--transparent-black);
     height: 30vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border: 1px solid var(--border-color);
+
 }
 
 button {
@@ -40,4 +45,20 @@ h1 {
     font-weight: 900;
     font-style: italic;
     color: var(--white-font);
+}
+
+#content-Div {
+    width: 35vw;
+    height: 65vh;
+    background-color: black;
+    margin-top: 4rem;
+    
+    
+}
+
+div#content {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
 }
