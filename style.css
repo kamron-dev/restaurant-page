@@ -48,10 +48,10 @@ h1 {
 }
 
 #content-Div {
-    width: 35vw;
-    height: 65vh;
-    background-color: black;
-    margin-top: 4rem;
+    width: 55vw;
+    height: 85vh;
+    background-color: var(--transparent-black);
+    margin: 4rem;
     
     
 }
