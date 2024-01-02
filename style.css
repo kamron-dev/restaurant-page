@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600;1,800;1,900&display=swap');
 
+:root {
+    --white-font: rgb(255, 255, 255);
+    --transparent-black: rgba(0, 0, 0, 0.681);
+    --border-color: rgba(85, 85, 85, 0.528);
+}
 
 html {
     font-family: Playfair Display, sans-serif;
 }
 
 body {
-    /*background-image: url("./pic.png"); */
+    background-image: url("./pic.png");
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -15,12 +20,13 @@ body {
     height: 100vh;
 }
 #header {
-    background-color: rgba(99, 97, 97, 0.762);
+    background-color: var(--transparent-black);
     height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border: 1px solid var(--border-color);
 }
 
 button {
@@ -31,5 +37,7 @@ button {
 
 h1 {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--white-font);
 }
