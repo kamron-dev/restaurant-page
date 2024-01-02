@@ -22,12 +22,15 @@ export default function renderPage() {
             const locationButton = document.createElement("button");
             
             menuButton.textContent = "Menu";
+            menuButton.setAttribute("id", "menuBtn");
             navElement.appendChild(menuButton);
             
             aboutButton.textContent = "About Us";
+            aboutButton.setAttribute("id", "aboutBtn");
             navElement.appendChild(aboutButton);
             
             locationButton.textContent = "Location";
+            locationButton.setAttribute("id", "locationBtn");
             navElement.appendChild(locationButton);
             
             header.appendChild(navElement);
