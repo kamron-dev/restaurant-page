@@ -50,7 +50,7 @@ export default function renderPage() {
             contentDiv = document.createElement("div");
             contentDiv.setAttribute("id", "content-Div");
             mainDiv.appendChild(contentDiv);
-
+            createMenu();
             return contentDiv;
         };
 
@@ -60,7 +60,6 @@ export default function renderPage() {
         createMain();
         
         menuButton.addEventListener("click", () => {
-            console.log("menu clicked!");
             contentDiv.innerHTML = '';
             createMenu();
         });
