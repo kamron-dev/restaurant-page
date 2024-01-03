@@ -5,8 +5,11 @@ export default function renderPage() {
     document.addEventListener("DOMContentLoaded", () => {
         //Placing the main div into a variable
         const mainDiv = document.querySelector("#content");
+
+        // Initializing variables to use them in this scope later
         let menuButton, aboutButton, locationButton, contentDiv;
     
+        // function that creates the Header
         function createHeader() {
             const header = document.createElement("header");
             header.setAttribute("id", "header");
@@ -18,6 +21,8 @@ export default function renderPage() {
 
             return header;
         };
+
+        // function that creates the Navbar
 
         function createNav() {
             const navElement = document.createElement("nav");
@@ -46,6 +51,7 @@ export default function renderPage() {
             return { menuButton, aboutButton, locationButton };
         };
 
+        // function that creates the content div
         function createMain() {
             contentDiv = document.createElement("div");
             contentDiv.setAttribute("id", "content-Div");
