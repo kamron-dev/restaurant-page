@@ -1,5 +1,6 @@
 import createMenu from "./menu";
 import aboutUs from "./about-us";
+import location from "./location";
 
 export default function renderPage() {
     document.addEventListener("DOMContentLoaded", () => {
@@ -73,6 +74,11 @@ export default function renderPage() {
         aboutButton.addEventListener("click", () => {
             contentDiv.innerHTML = "";
             aboutUs();
+        });
+
+        locationButton.addEventListener("click", () => {
+            contentDiv.innerHTML = "";
+            location();
         })
 
 
