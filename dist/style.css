@@ -3,6 +3,7 @@
 :root {
     --white-font: rgb(255, 255, 255);
     --transparent-black: rgba(0, 0, 0, 0.681);
+    --darker-transparent-black: rgba(0, 0, 0, 0.508);
     --border-color: rgba(85, 85, 85, 0.528);
 }
 
@@ -12,10 +13,10 @@ html {
 }
 
 body {
-   /* background-image: url("./pic.png"); */
+    background-image: url("./pic.png");
     margin: 0;
     padding: 0;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -39,6 +40,9 @@ button {
     margin: 10px;
     height: 45px;
     width: 72.81px;
+    font-family: Playfair Display, sans-serif;
+    color: var(--white-font);
+    background-color: var(--transparent-black);
 }
 
 h1 {
@@ -68,14 +72,19 @@ div#content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 84.5vh;
     
    
 }
 
 .menu-item {
-    border: 1px solid green;
     margin: 15px;
     padding: 1rem;
+    background-color: var(--transparent-black);
+    color: var(--white-font);
+}
+
+.menu-item:hover {
+    background-color: var(--darker-transparent-black);
 }
