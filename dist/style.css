@@ -38,11 +38,14 @@ body {
 
 button {
     margin: 10px;
-    height: 45px;
-    width: 72.81px;
+    height: 3rem;
+    width: 4.85rem;
     font-family: Playfair Display, sans-serif;
     color: var(--white-font);
     background-color: var(--transparent-black);
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1rem;
 }
 
 h1 {
@@ -72,7 +75,6 @@ div#content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* border: 2px solid red; */
     height: 84.5vh;
     
    
